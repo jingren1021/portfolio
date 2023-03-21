@@ -287,6 +287,13 @@ section{
 
 .about-stats{
     padding-bottom: 4rem;
+    .subtitle{
+        font-size: 1.1rem;
+        text-align: center;
+        margin-top: -2rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
     .progress-bars{
         display: grid;
         grid-template-columns: 5fr 5fr;
@@ -323,13 +330,28 @@ section{
                         width: 50%;
                     }
                     .html{
-                        width: 10%;
+                        width: 14.6%;
                     }
                     .css{
-                        width: 10%;
+                        width: 14.6%;
                     }
                     .js{
-                        width: 5%;
+                        width: 10.42%;
+                    }
+                    .cpp{
+                        width: 100%;
+                    }
+                    .python{
+                        width: 75%;
+                    }
+                    .java{
+                        width: 12.5%;
+                    }
+                    .docker{
+                        width: 25%;
+                    }
+                    .kubernetes{
+                        width: 25%;
                     }
                 }
             }
@@ -381,6 +403,52 @@ section{
                 font-size: 1.3rem;
             }
         }
+        .tl-duration{
+            padding: .2rem .6rem;
+            background-color: var(--color-grey-5);
+            border-radius: 15px;
+            display: inline-block;
+            font-size: .8rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        h5{
+            padding: 1rem 0;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            font-weight: 600;
+            span{
+                color: var(--color-grey-2);
+                font-weight: 500;
+                font-size: 1.2rem;
+            }
+        }
+        p{
+            color: var(--color-grey-2);
+        }
+    }
+}
+
+// certifications
+.certifications{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-gap: 2rem;
+    padding-bottom: 3rem;
+    .cert-item{
+        padding: 2rem 1.5rem;
+        border: 1px solid var(--color-grey-5);
+        border-radius: 5px;
+        transition: all .4s ease-in-out;
+        box-shadow: 1px 2px 15px rgba(0,0,0,.1);
+        &:hover{
+            cursor: default;
+            transform: translateY(-5px);
+            border: 1px solid var(--color-secondary);
+            box-shadow: 1px 4px 15px rgba(0,0,0,.32);
+        }
+        position: relative;
+        padding-left: 3rem;
         .tl-duration{
             padding: .2rem .6rem;
             background-color: var(--color-grey-5);

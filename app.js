@@ -5,6 +5,7 @@ const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
 const portfolioBtn = document.querySelector('.portfolio-btn');
 const portfolioSect = document.querySelector('#portfolio');
+const certBtn = document.querySelector('.cert-btn');
 
 function PageTransitions(){
     // portfolio button
@@ -23,6 +24,11 @@ function PageTransitions(){
         });
 
         portfolioSect.classList.add('active');
+    })
+
+    // certifications button
+    certBtn.addEventListener('click', function(){
+        document.getElementById("certifications").scrollIntoView();
     })
 
     // button click active class
